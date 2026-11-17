@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELEMENT HUNTER 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-glow glow-one"></div>
+  <div class="bg-glow glow-two"></div>
+
+  <header class="header">
+    <div class="brand">
+      <div class="brand-icon">⚛️</div>
+      <div>
+        <h1>ELEMENT <span>HUNTER</span></h1>
+        <p>CHEMISTRY CHALLENGE 3D</p>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-box">
+        <small>BALL</small>
+        <strong id="score">0</strong>
+      </div>
+      <div class="stat-box">
+        <small>REKORD</small>
+        <strong id="record">0</strong>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="game-card">
+
+      <div class="top-row">
+        <div>
+          <span class="level-tag" id="levelTag">1-DARAJA</span>
+          <h2 id="levelName">Yangi kimyogar</h2>
+        </div>
+
+        <div class="timer">
+          <span>⏱️</span>
+          <strong id="timer">15</strong>
+          <small>SEKUND</small>
+        </div>
+      </div>
+
+      <div class="progress-info">
+        <span>O‘yin jarayoni</span>
+        <span id="roundText">1 / 15</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="progress"></div>
+      </div>
+
+      <div id="gameArea">
+        <div class="mission">
+          <div class="mission-icon">🔍</div>
+          <small id="missionType">ELEMENTNI TOPING</small>
+          <h2 id="question">Vodorod elementini toping!</h2>
+          <p id="hint">Belgisi: H</p>
+        </div>
+
+        <div class="periodic-heading">
+          <div>
+            <h3>DAVRIY JADVAL</h3>
+            <p>To‘g‘ri elementni tanlang</p>
+          </div>
+          <span class="atom-decoration">⚛️</span>
+        </div>
+
+        <div class="periodic-grid" id="elementGrid"></div>
+
+        <div id="feedback" class="feedback hidden"></div>
+
+        <button id="nextBtn" class="next-btn hidden">
+          KEYINGI SAVOL ➜
+        </button>
+      </div>
+
+      <div id="resultScreen" class="result-screen hidden">
+        <div class="trophy">🏆</div>
+        <h2>O‘yin yakunlandi!</h2>
+        <p id="resultMessage">Ajoyib natija!</p>
+
+        <div class="result-box">
+          <small>TO‘PLANGAN BALL</small>
+          <strong id="finalScore">0</strong>
+        </div>
+
+        <div class="result-box record-result">
+          <small>ENG YUQORI REKORD</small>
+          <strong id="finalRecord">0</strong>
+        </div>
+
+        <button id="restartBtn" class="restart-btn">
+          QAYTA O‘YNASH ↻
+        </button>
+      </div>
+
+    </section>
+
+    <section class="help-cards">
+      <div class="help-card">
+        <span>🔬</span>
+        <div>
+          <strong>20 ta element</strong>
+          <small>Birinchi 20 element</small>
+        </div>
+      </div>
+
+      <div class="help-card">
+        <span>⚡</span>
+        <div>
+          <strong>15 ta savol</strong>
+          <small>Tezkor sinov</small>
+        </div>
+      </div>
+
+      <div class="help-card">
+        <span>🏅</span>
+        <div>
+          <strong>3 ta daraja</strong>
+          <small>Oson, o‘rta, qiyin</small>
+        </div>
+      </div>
+    </section>
+
+    <footer>ELEMENT HUNTER 3D · CHEMISTRY GAME</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
